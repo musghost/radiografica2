@@ -1,0 +1,54 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.player{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  .image{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    //opacity: .5;
+    background: {
+      image: url('../images/home/r.png');
+      size: cover;
+      repeat: no-repeat;
+    }
+    &:before{
+        content: ' ';
+        background: url("../images/home/overlay.png");
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+  }
+  .logo{
+    position: absolute;
+    top: 17.35241502%;
+    right: 32.51953125%;
+    left: 45.703125%;
+    bottom: 13.059033%;
+    background: {
+      image: url('../images/home/logo-06.png');
+      size: cover;
+      repeat: no-repeat;
+    }
+  }
+}
