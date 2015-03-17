@@ -320,7 +320,7 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/**/*'
           ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
@@ -330,6 +330,12 @@ module.exports = function (grunt) {
           dot: true,
           cwd: '.',
           src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
+          dest: '<%= config.dist %>'
+        }, {
+          expand: true,
+          dot: true,
+          cwd: 'bower_components/fontawesome',
+          src: ['fonts/*.*'],
           dest: '<%= config.dist %>'
         }]
       },
@@ -409,7 +415,7 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'copy:dist',
-    'rev',
+    //'rev',
     'usemin',
     'htmlmin'
   ]);

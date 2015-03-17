@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body>
+  <body class="info">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -36,10 +36,13 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#" class="logo">Radiográfica</a></li>
+          </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">red</a></li>
             <li><a href="#">proyectos</a></li>
-            <li><a href="#">info</a></li>
+            <li class="active"><a href="#">info</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -47,40 +50,33 @@
 
 
     <div id="main">
-      <div id="P1" class="player" data-property="{videoURL:'http://youtu.be/l_tHTmd5pgk',containment:'self',startAt:0,mute:true,autoPlay:true,loop:true,showControls:false,opacity:.8}">
-        <div class="image"></div>
-      </div>
-      <div id="description">
+      <div id="form">
         <div class="container">
-          <h3>Somos una alternativa en</h3>
-          <h1>diseño & estrategia</h1>
-          <h3>para diversas necesisades de comunicación</h3>
+          <div class="container-wrapper">
+            <h1>déjanos tus comentarios</h1>
+            <div class="form">
+              <form>
+                <textarea></textarea>
+                <button>¡listo!<br>enviar</button>
+              </form>
+            </div>
+            <h3>escríbenos</h3>
+            <h1><a href="mailto:info@radiográfica.mx">info@radiográfica.mx</a></h1>
+            <h3>llámanos</h3>
+            <h1>(01 55) 65851669</h1>
+            <h3>¿dudas con tus facturas?</h3>
+            <h1><a href="mailto:facturas@radiografica.mx">facturas@radiografica.mx</a></h1>
+            <h3>síguenos</h3>
+            <h1 class="brands">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-behance"></i></a>
+            </h1>
+            </div>
         </div>
       </div>
-      <div id="projects">
-        <div class="container">
-          <div class="col-sm-4">
-            <div class="img">
-              <a href="#"><img src="images/home/front1.jpg"></a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="img">
-              <a href="#"><img src="images/home/front2.jpg"></a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="img">
-              <a href="#"><img src="images/home/front3.jpg"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="meet-us">
-        <div class="container">
-          <h1>¿tienes algo en mente?</h1>
-          <h3>¡Comencemos!</h3>
-        </div>
+      <div id="image">
+        <img src="images/info/dog.jpg">
       </div>
       <footer>
         <div class="container">
