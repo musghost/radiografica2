@@ -52,6 +52,16 @@ body.info{
       .success{
         display: none;
       }
+      h3{
+        font-family: 'Aleo-Regular';
+        color: #565655;
+        font-size: 40px;
+      }
+      p{
+        font-family: 'HalisGR-Extralight';
+        color: #A2A1A2;
+        font-size: 22px;
+      }
     }
     h1{
       color: $pink;
@@ -84,6 +94,17 @@ body.info{
         font-size: 18px;
         line-height: 20px;
         font-family: 'HalisGR-Extralight';
+        @media screen and (max-width: 1199px){
+          right: 0;
+        }
+        @media screen and (max-width: 992px){
+          right: -4%;
+        }
+        @media screen and (max-width: 766px){
+          position: static;
+          display: block;
+          float: right;
+        }
       }
       textarea{
         width: 90%;
@@ -95,6 +116,9 @@ body.info{
         padding: 20px;
         font-family: 'HalisGR-Extralight';
         font-size: 20px;
+        @media screen and (max-width: 766px){
+          width: 100%;
+        }
         &:focus{
           box-shadow: inset 0px 0px 7px 0px #B0B0B0;
           outline: none;
@@ -109,6 +133,17 @@ body.info{
         position: absolute;
         left: 0;
         top: 24px;
+      }
+    }
+    @media screen and (max-width: 766px){
+      .form{
+        overflow: hidden;
+      }
+      h3{
+        font-size: 20px;
+      }
+      h1{
+        font-size: 25px;
       }
     }
   }
