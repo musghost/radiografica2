@@ -1,4 +1,29 @@
 body.projects{
+  .navbar{
+    position: static;
+    padding-top: 0;
+    background: $pink;
+    border-radius: 0;
+    position: relative;
+    .navbar-toggle{
+      background: white;
+      .icon-bar{
+        background: $pink;
+      }
+    }
+    li{
+      &.active{
+        a{
+          &:before{
+            background: white;
+          }
+        }
+      }
+    }
+  }
+  #main{
+    margin-top: 50px;
+  }
 	#projects-section{
     &:after,
     &:before{
@@ -26,10 +51,18 @@ body.projects{
         right: 0;
         bottom: 0;
         top: 0;
-        background: rgba(0, 0, 0, .8);
-        opacity: 0.6;
-        display: none;
+        background: rgba(0, 0, 0, 0.8);
         z-index: 3;
+        color: white;
+        transition: opacity 0.3s linear;
+        opacity: 0;
+        text-align: center;
+      }
+      .description-content{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
       }
       .cover{
         position: absolute;
@@ -38,6 +71,7 @@ body.projects{
         top: 0;
         bottom: 0;
         z-index: 2;
+        transition: background-size 0.3s ease;
         background: {
           repeat: no-repeat;
           size: 100%;
@@ -46,7 +80,10 @@ body.projects{
       }
       &:hover{
         .description{
-          display: block;
+          opacity: 1;
+        }
+        .cover{
+          background-size: 103%;
         }
       }
     }
