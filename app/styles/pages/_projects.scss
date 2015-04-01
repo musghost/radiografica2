@@ -36,6 +36,9 @@ body.projects{
     .projects-column{
       float: left;
       width: 50%;
+      @media screen and (max-width: 599px){
+        width: 100%;
+      }
     }
     .project{
       position: relative;
@@ -63,6 +66,15 @@ body.projects{
         top: 50%;
         transform: translateY(-50%);
         width: 100%;
+        h2{
+          font-family: 'Aleo-Regular';
+          font-size: 25px;
+          margin-bottom: 0;
+        }
+        p{
+          font-family: 'HalisGR-Extralight';
+          font-size: 13.5px;
+        }
       }
       .cover{
         position: absolute;
