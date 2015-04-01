@@ -60,3 +60,42 @@
     });
   });
 })();
+
+
+// Red
+var sliders = $('.image-slider');
+if(sliders.length > 0){
+  var imgs = sliders.find('img'),
+    len = imgs.length,
+    current = 0;
+
+  var change = function() {
+    var next;
+    if(current + 1 >= len) {
+      next = 0;
+    } else {
+      next = current+ 1;
+    }
+    imgs.eq(current).animate({
+      opacity: 0.5
+    }, 500, function(){
+      $(this).removeClass('active').removeAttr('style');
+      imgs.eq(next).css({
+        display: 'block',
+        opacity: 0.5
+      }).animate({
+        opacity: 1
+      }, 500, function(){
+        $(this).addClass('active').removeAttr('style');
+        current = next;
+        setTimeout(function(){
+          change();
+        }, 5000);
+      });
+    });
+  };
+
+  setTimeout(function(){
+    change();
+  }, 5000);
+}
