@@ -1,5 +1,28 @@
 'use strict';
+$(function(){
+    var scrollTopP = $(document).scrollTop();
+    var headerHeight = $('.navbar').outerHeight();
 
+    $(window).scroll(function() {
+        var totalScroll = $(document).scrollTop();
+
+        if (totalScroll > headerHeight){
+          $('.navbar').addClass('gizle');
+        }
+        else {
+          $('.navbar').removeClass('gizle');
+        }
+
+        if (totalScroll > scrollTopP){
+          $('.navbar').removeClass('sabit');
+        }
+        else {
+          $('.navbar').addClass('sabit');
+        }
+
+        scrollTopP = $(document).scrollTop();
+     });
+});
 (function(){
   $('.player').YTPlayer();
 

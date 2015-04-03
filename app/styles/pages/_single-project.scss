@@ -1,4 +1,7 @@
 body.single-project {
+  .navbar a {
+    color: $pink;
+  }
   .project {
     .head {
       position: relative;
@@ -11,6 +14,7 @@ body.single-project {
         color: $pink;
         font-family: 'Aleo-Regular';
         left: 45px;
+        font-size: 60px;
       }
     }
     .description {
@@ -20,11 +24,15 @@ body.single-project {
       }
       p {
         font-family: 'HalisGR-Extralight';
+        max-width: 660px;
       }
     }
     .images {
       img {
         width: 100%;
+      }
+      .single{
+        margin-top: 12px;
       }
       .double {
         margin-top: 12px;
@@ -47,5 +55,8 @@ body.single-project {
         }
       }
     }
+  }
+  footer{
+    margin-top: 12px;
   }
 }

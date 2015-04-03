@@ -1,4 +1,12 @@
 body.red{
+  .navbar {
+    background: none;
+    .navbar-brand {
+      background:{
+        image: url('../images/logo-small.png');
+      }
+    }
+  }
   .image-slider{
     img{
       width: 100%;
