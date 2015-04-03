@@ -6,6 +6,9 @@ body.red{
         image: url('../images/logo-small.png');
       }
     }
+    a{
+      color: $pink;
+    }
   }
   .image-slider{
     img{

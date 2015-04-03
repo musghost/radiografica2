@@ -1,6 +1,14 @@
 body.single-project {
-  .navbar a {
-    color: $pink;
+  .navbar {
+    background: none;
+    a {
+      color: $pink;
+    }
+    .navbar-brand {
+      background:{
+        image: url('../images/logo-small.png');
+      }
+    }
   }
   .project {
     .head {
