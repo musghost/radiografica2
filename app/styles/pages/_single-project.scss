@@ -1,3 +1,51 @@
-body.single-project{
-
+body.single-project {
+  .project {
+    .head {
+      position: relative;
+      img {
+        width: 100%;
+      }
+      h1 {
+        position: absolute;
+        top: 93px;
+        color: $pink;
+        font-family: 'Aleo-Regular';
+        left: 45px;
+      }
+    }
+    .description {
+      padding: 65px 0 80px;
+      h1 {
+        font-family: 'Aleo-Regular';
+      }
+      p {
+        font-family: 'HalisGR-Extralight';
+      }
+    }
+    .images {
+      img {
+        width: 100%;
+      }
+      .double {
+        margin-top: 12px;
+        &:after,
+        &:before{
+          display: table;
+          content: '';
+        }
+        &:after{
+          clear: both;
+        }
+        .image {
+          width: 50%;
+          float: left;
+          padding-right: 6px;
+          & + .image {
+            padding-left: 6px;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
 }
