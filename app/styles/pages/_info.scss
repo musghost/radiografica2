@@ -1,4 +1,15 @@
 body.info{
+  .navbar {
+    background: none;
+    .navbar-brand {
+      background:{
+        image: url('../images/logo-small.png');
+      }
+    }
+    a{
+      color: $pink;
+    }
+  }
   #form{
     padding-top: 90px;
     position: relative;
