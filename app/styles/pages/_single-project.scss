@@ -10,6 +10,42 @@ body.single-project {
       }
     }
   }
+  #navigators{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    left: 0;
+    right: 0;
+    .left,
+    .right{
+      width: 63px;
+      height: 65px;
+      display: inline-block;
+      opacity: 0.4;
+      background: {
+        image: url(../images/projects/next.png);
+        repeat: no-repeat;
+      }
+      transition:{
+        property: all;
+        duration: 0.2s;
+        timing-function: ease-in-out;
+      }
+      &:hover{
+        opacity: 1;
+      }
+    }
+    .left{
+      float:left;
+      margin-left: 23px;
+    }
+    .right{
+      float: right;
+      transform: rotate(180deg);
+      margin-right: 23px;
+    }
+  }
   .project {
     .head {
       position: relative;
